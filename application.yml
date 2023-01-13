@@ -1,9 +1,3 @@
-spring:
-  zipkin:
-    enabled:true
-cloud:
-  discovery:
-    enabled:true
 eureka:
   instance:
     prefer-ip-address: true
@@ -15,22 +9,7 @@ eureka:
   instance:
     hostname: localhost 
     
-    
-microservice:
- ratings-service:
-    endpoints:
-      endpoint:
-        uri:http://localhost:8198/api/inventory/**
- catalog-service:
-    endpoints:
-      endpoint:
-        uri:http://localhost:8198/api/inventory/**
-  movie-service:
-    endpoints:
-      endpoint:
-        uri:http://localhost:8081/api/product/**
-  image-service:
-    endpoints:
-      endpoint:
-        uri:http://localhost:8083/api/order/**
- 
+    spring:
+      cloud:
+        discovery:
+          enabled:true
