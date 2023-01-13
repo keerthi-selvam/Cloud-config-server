@@ -13,6 +13,5 @@ eureka:
       cloud:
         discovery:
         enabled: true
-      Zipkin:
-        enabled: true
+    
         
