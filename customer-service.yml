@@ -1,0 +1,3 @@
+customer:
+  welcome-message: "Hello from Config Server!"
+  page-size: 20
